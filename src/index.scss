@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  background-color: $light;
+  color: $dark;
+  font-family: "Arial", sans-serif;
+}

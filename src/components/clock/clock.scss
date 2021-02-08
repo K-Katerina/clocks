@@ -1,0 +1,69 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.clock {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  position: relative;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px $dark, inset 0 0 3px $dark;
+  background: rgba($info,.2);
+}
+
+.clock:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  background: $light;
+  border-radius: 6px;
+  box-shadow: 0 0 3px $dark;
+  display: block;
+}
+
+.hour {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -30% 0 0 -4px;
+  padding: 30% 4px 0;
+  background: #fff;
+  transform-origin: 50% 100%;
+  box-shadow: 0 0 2px $dark;
+}
+
+.minute {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -45% 0 0 -2px;
+  padding: 45% 2px 0;
+  background: #fff;
+  transform-origin: 50% 100%;
+  box-shadow: 0 0 2px $dark;
+}
+
+.second {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -45% 0 0 -1px;
+  padding: 45% 1px 0;
+  background: #fff;
+  transform-origin: 50% 100%;
+  box-shadow: 0 0 2px $dark;
+}
+
+.wrapper {
+  position: relative;
+}
